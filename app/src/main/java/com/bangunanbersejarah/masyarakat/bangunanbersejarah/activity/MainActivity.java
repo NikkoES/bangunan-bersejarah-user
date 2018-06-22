@@ -103,6 +103,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_prov_yogyakarta:
                 fragment = new YogyakartaFragment();
                 break;
+            case R.id.nav_quiz:
+                startActivity(new Intent(getApplicationContext(), QuizActivity.class));
+                break;
             case R.id.nav_tentang:
                 fragment = new TentangFragment();
                 break;
