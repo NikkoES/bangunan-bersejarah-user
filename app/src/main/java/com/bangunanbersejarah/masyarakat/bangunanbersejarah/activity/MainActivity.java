@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bangunanbersejarah.masyarakat.bangunanbersejarah.fragment.FavoritFragment;
 import com.bumptech.glide.Glide;
 import com.bangunanbersejarah.masyarakat.bangunanbersejarah.R;
 import com.bangunanbersejarah.masyarakat.bangunanbersejarah.fragment.BantenFragment;
@@ -102,6 +103,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_prov_yogyakarta:
                 fragment = new YogyakartaFragment();
+                break;
+            case R.id.nav_favorit:
+                fragment = new FavoritFragment();
                 break;
             case R.id.nav_quiz:
                 startActivity(new Intent(getApplicationContext(), QuizActivity.class));

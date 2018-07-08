@@ -65,7 +65,7 @@ public class JawaBaratFragment extends Fragment {
 
         apiService = UtilsApi.getAPIService();
 
-        adapter = new BangunanAdapter(getContext(), listBangunan);
+        adapter = new BangunanAdapter(getContext(), listBangunan, 1);
 
         rvBangunan.setHasFixedSize(true);
         rvBangunan.setLayoutManager(new GridLayoutManager(getContext(), 2));
@@ -151,7 +151,7 @@ public class JawaBaratFragment extends Fragment {
 
                     listBangunan = response.body().getListBangunan();
 
-                    rvBangunan.setAdapter(new BangunanAdapter(getContext(), listBangunan));
+                    rvBangunan.setAdapter(new BangunanAdapter(getContext(), listBangunan, 1));
                     adapter.notifyDataSetChanged();
                 }
                 else {
@@ -179,7 +179,7 @@ public class JawaBaratFragment extends Fragment {
 
                     listBangunan = response.body().getListBangunan();
 
-                    rvBangunan.setAdapter(new BangunanAdapter(getContext(), listBangunan));
+                    rvBangunan.setAdapter(new BangunanAdapter(getContext(), listBangunan, 1));
                     adapter.notifyDataSetChanged();
                 }
                 else {

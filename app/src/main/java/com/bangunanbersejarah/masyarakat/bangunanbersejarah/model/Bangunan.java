@@ -8,6 +8,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class Bangunan {
 
+    int id;
     @SerializedName("id_bangunan")
     String idBangunan;
     @SerializedName("nama_bangunan")
@@ -20,14 +21,49 @@ public class Bangunan {
     String idProvinsi;
     @SerializedName("id_daerah")
     String idDaerah;
+    @SerializedName("tanggal_pengajuan")
+    String tanggal;
+    @SerializedName("alamat_bangunan")
+    String alamatBangunan;
 
-    public Bangunan(String idBangunan, String namaBangunan, String sejarahBangunan, String imageBangunan, String idProvinsi, String idDaerah) {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setIdBangunan(String idBangunan) {
         this.idBangunan = idBangunan;
+    }
+
+    public void setNamaBangunan(String namaBangunan) {
         this.namaBangunan = namaBangunan;
+    }
+
+    public void setSejarahBangunan(String sejarahBangunan) {
         this.sejarahBangunan = sejarahBangunan;
+    }
+
+    public void setImageBangunan(String imageBangunan) {
         this.imageBangunan = imageBangunan;
+    }
+
+    public void setIdProvinsi(String idProvinsi) {
         this.idProvinsi = idProvinsi;
+    }
+
+    public void setIdDaerah(String idDaerah) {
         this.idDaerah = idDaerah;
+    }
+
+    public void setTanggal(String tanggal) {
+        this.tanggal = tanggal;
+    }
+
+    public void setAlamatBangunan(String alamatBangunan) {
+        this.alamatBangunan = alamatBangunan;
     }
 
     public String getIdBangunan() {
@@ -52,5 +88,13 @@ public class Bangunan {
 
     public String getIdDaerah() {
         return idDaerah;
+    }
+
+    public String getTanggal() {
+        return tanggal;
+    }
+
+    public String getAlamatBangunan() {
+        return alamatBangunan;
     }
 }

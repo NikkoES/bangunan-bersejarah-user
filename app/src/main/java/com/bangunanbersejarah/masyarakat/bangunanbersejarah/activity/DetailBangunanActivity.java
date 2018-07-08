@@ -26,7 +26,7 @@ public class DetailBangunanActivity extends AppCompatActivity {
 
     boolean ExpandedActionBar = true;
 
-    String idBangunan, namaBangunan, sejarahBangunan, imageBangunan, idProvinsi, idDaerah;
+    String idBangunan, namaBangunan, sejarahBangunan, imageBangunan, idProvinsi, idDaerah, tanggal, alamat;
 
     @BindView(R.id.iv_bangunan)
     ImageView imgBangunan;
@@ -34,6 +34,10 @@ public class DetailBangunanActivity extends AppCompatActivity {
     TextView tvNamaBangunan;
     @BindView(R.id.tv_sejarah_bangunan)
     TextView tvSejarahBangunan;
+    @BindView(R.id.tv_tanggal)
+    TextView tvTanggal;
+    @BindView(R.id.tv_alamat_bangunan)
+    TextView tvAlamatBangunan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,8 @@ public class DetailBangunanActivity extends AppCompatActivity {
         imageBangunan = getIntent().getStringExtra("image_bangunan");
         idProvinsi = getIntent().getStringExtra("id_provinsi");
         idDaerah = getIntent().getStringExtra("id_daerah");
+        tanggal = getIntent().getStringExtra("tanggal");
+        alamat = getIntent().getStringExtra("alamat");
 
         Glide.with(getApplicationContext())
                 .load(imageBangunan)
@@ -62,6 +68,8 @@ public class DetailBangunanActivity extends AppCompatActivity {
                 .into(imgBangunan);
         tvNamaBangunan.setText(namaBangunan);
         tvSejarahBangunan.setText(sejarahBangunan);
+        tvTanggal.setText(tanggal);
+        tvAlamatBangunan.setText("Alamat : "+alamat);
 
         Appbar.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @Override

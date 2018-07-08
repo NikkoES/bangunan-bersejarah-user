@@ -10,6 +10,7 @@
     <string name="prov_jawatimur">Provinsi Jawa Timur</string>
     <string name="prov_yogyakarta">Provinsi DIY Yogyakarta</string>
 
+    <string name="favorit">Bangunan Favorit</string>
     <string name="quiz">Quis Bangunan Bersejarah</string>
     <string name="tentang">Tentang</string>
     <string name="title_activity_main">MainActivity</string>

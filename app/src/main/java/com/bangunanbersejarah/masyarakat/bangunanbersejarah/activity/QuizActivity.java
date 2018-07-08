@@ -206,16 +206,16 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void initSoal(){
-        listSoal.add(new SoalQuiz("Pertanyaan 1", "Opsi A1", "Opsi B1", "Opsi C1", "Opsi D1", "A"));
-        listSoal.add(new SoalQuiz("Pertanyaan 2", "Opsi A2", "Opsi B2", "Opsi C2", "Opsi D2", "B"));
-        listSoal.add(new SoalQuiz("Pertanyaan 3", "Opsi A3", "Opsi B3", "Opsi C3", "Opsi D3", "C"));
-        listSoal.add(new SoalQuiz("Pertanyaan 4", "Opsi A4", "Opsi B4", "Opsi C4", "Opsi D4", "D"));
-        listSoal.add(new SoalQuiz("Pertanyaan 5", "Opsi A5", "Opsi B5", "Opsi C5", "Opsi D5", "A"));
-        listSoal.add(new SoalQuiz("Pertanyaan 6", "Opsi A6", "Opsi B6", "Opsi C6", "Opsi D6", "B"));
-        listSoal.add(new SoalQuiz("Pertanyaan 7", "Opsi A7", "Opsi B7", "Opsi C7", "Opsi D7", "C"));
-        listSoal.add(new SoalQuiz("Pertanyaan 8", "Opsi A8", "Opsi B8", "Opsi C8", "Opsi D8", "D"));
-        listSoal.add(new SoalQuiz("Pertanyaan 9", "Opsi A9", "Opsi B9", "Opsi C9", "Opsi D9", "A"));
-        listSoal.add(new SoalQuiz("Pertanyaan 10", "Opsi A10", "Opsi B10", "Opsi C10", "Opsi D10", "B"));
+        listSoal.add(new SoalQuiz("Tempat untuk menyimpan benda-benda bersejarah adalah..", "Situs", "Monumen", "Museum", "Laboratorium", "C"));
+        listSoal.add(new SoalQuiz("Contoh peninggalan sejarah bangunan adalah..", "Arca", "Peralatan", "Candi", "Naskah kuno", "C"));
+        listSoal.add(new SoalQuiz("Bangunan besar yang terbuat dari batu atau batu bata disebut..", "Pure", "Candi", "Masjid", "Wihara", "B"));
+        listSoal.add(new SoalQuiz("Tempat penemuan benda-benda peninggalan sejarah disebut..", "Situs", "Monumen", "Museum", "Laboratorium", "A"));
+        listSoal.add(new SoalQuiz("Dalam rangka menjaga, melindungi, dan melestarikan benda-benda sejarah dan purbakala, pemerintah Indonesia menerbitkan Undang-undang Republik Indonesia Nomor 5 Tahun 1992 tentang..", "Benda cagar budaya dan Penjelasannya", "Benda-benda asing dan perawatannya", "Bangunan bersejarah dan pemugarannya", "Benda-benda antik dan perawatannya", "A"));
+        listSoal.add(new SoalQuiz("Berikut ini adalah tindakan yang dapat merusak benda bersejarah..", "Berfoto di bangunan sejarah", "Melukis benda-benda bersejarah", "Mencoret benda bersejarah", "Meneliti benda bersejarah", "C"));
+        listSoal.add(new SoalQuiz("Peninggalan sejarah banyak dimanfaatkan sebagai..", "Bahan bangunan", "Objek wisata", "Tempat pembuangan", "Sumber makanan", "B"));
+        listSoal.add(new SoalQuiz("Berikut yang tidak termasuk peninggalan sejarah di indonesia adalah..", "Candi", "Masjid", "Benteng", "Bandara", "D"));
+        listSoal.add(new SoalQuiz("Masjid, candi, benteng dan pura merupakan peninggalan sejarah yang berupa..", "Sumber makanan", "Objek wisata", "Bangunan", " Tempat pembuangan", "C"));
+        listSoal.add(new SoalQuiz("Suatu bangunan yang didirikan untuk memperingati suatu insiden atau kejadian bersejarah disebut..", "Tugu/monumen", "Taman", "Museum", "Lab", "A"));
 
         for(int i=0;i<10;i++){
             listJawaban.add("-");
